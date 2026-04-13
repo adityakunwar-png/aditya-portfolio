@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Kunwar | Portfolio</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
+
+  <!-- Internal CSS -->
+  <style>
+    /* Decorative floating orbs */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(80px);
+      opacity: 0.12;
+    }
+    .orb-1 {
+      width: 500px;
+      height: 500px;
+      background: var(--accent2);
+      top: -100px;
+      right: -150px;
+    }
+    .orb-2 {
+      width: 400px;
+      height: 400px;
+      background: var(--accent);
+      bottom: 0;
+      left: -100px;
+    }
+    /* Page-specific accent for class/section badge */
+    .meta-badge {
+      background: linear-gradient(135deg, rgba(200,169,110,0.12), rgba(124,111,247,0.08));
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 0.5rem 1.2rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      display: inline-flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .meta-badge span { color: var(--accent); font-weight: 600; }
+  </style>
+</head>
+<body>
+
+  <!-- Decorative background -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="about.html" class="nav-logo">AK</a>
+    <ul class="nav-links">
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="interests.html">Interests</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+
+        <!-- Inline CSS used here for eyebrow text color -->
+        <div class="hero-eyebrow" style="color: var(--accent);">
+          Personal Portfolio
+        </div>
+
+        <div class="meta-badge">
+          <div>Grade <span>11</span></div>
+          <div>Section <span>Swargadwari</span></div>
+        </div>
+
+        <h1 class="hero-name fade-up fade-up-1">
+          <span class="first">Aditya</span>
+          <span class="last">Kunwar</span>
+        </h1>
+
+        <p class="hero-tagline fade-up fade-up-2">
+          A focused and motivated student who is always trying to improve — 
+          with goal-oriented thinking, strong communication, and a passion 
+          for lifelong learning.
+        </p>
+
+        <div class="hero-buttons fade-up fade-up-3">
+          <a href="skills.html" class="btn btn-primary">View My Skills</a>
+          <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+        </div>
+
+      </div>
+
+      <div class="hero-avatar fade-up fade-up-2">
+        <div class="avatar-frame">
+          <div class="avatar-initials">AK</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Details Section -->
+    <section class="about-details">
+      <span class="section-label">About Me</span>
+      <h2>Who I Am</h2>
+      <div class="divider"></div>
+
+      <div class="about-grid">
+        <div class="detail-card fade-up fade-up-1">
+          <div class="detail-icon">🎯</div>
+          <h3>Goal-Oriented</h3>
+          <p>I believe in setting clear goals and working steadily towards them. 
+             This mindset keeps me focused and motivated in everything I do.</p>
+        </div>
+
+        <div class="detail-card fade-up fade-up-2">
+          <div class="detail-icon">💬</div>
+          <h3>Communicator</h3>
+          <p>I have good communication skills and am actively working on 
+             expressing myself more clearly and confidently every day.</p>
+        </div>
+
+        <div class="detail-card fade-up fade-up-3">
+          <div class="detail-icon">🌱</div>
+          <h3>Lifelong Learner</h3>
+          <p>I am always willing to learn new things and improve my knowledge 
+             across different subjects and areas of life.</p>
+        </div>
+
+        <div class="detail-card fade-up fade-up-4">
+          <div class="detail-icon">🤝</div>
+          <h3>Empathetic</h3>
+          <p>I understand others' feelings and try to support those around me. 
+             Building genuine relationships matters to me.</p>
+        </div>
+      </div>
+
+      <!-- Info Pills -->
+      <div class="info-pills">
+        <div class="pill highlight">Grade 11 Student</div>
+        <div class="pill highlight">Section Swargadwari</div>
+        <div class="pill">Kavya School</div>
+        <div class="pill">Computer Science</div>
+        <div class="pill">2026</div>
+      </div>
+
+      <!-- Quote block -->
+      <blockquote class="quote-block">
+        "Success is not final, failure is not fatal: it is the courage to continue that counts."
+        <span>— A personal motto I live by</span>
+      </blockquote>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <span class="footer-name">Aditya Kunwar</span> &nbsp;·&nbsp; 
+      Grade 11 | Section Swargadwari &nbsp;·&nbsp; 
+      CS427 Computer Science &nbsp;·&nbsp; 
+      Kavya School © 2026
+    </p>
+  </footer>
+
+</body>
+</html>

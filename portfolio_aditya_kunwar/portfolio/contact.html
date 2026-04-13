@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Aditya Kunwar</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+
+  <!-- Internal CSS -->
+  <style>
+    /* Contact page background decoration */
+    .contact-deco {
+      position: fixed;
+      bottom: -100px;
+      right: -100px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(124,111,247,0.06) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Required field asterisk */
+    .required::after {
+      content: ' *';
+      color: var(--accent);
+    }
+
+    /* Character counter */
+    .char-count {
+      text-align: right;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+    }
+
+    /* Availability indicator */
+    .availability {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-top: 2.5rem;
+      padding: 1rem 1.2rem;
+      background: rgba(34, 197, 94, 0.06);
+      border: 1px solid rgba(34, 197, 94, 0.2);
+      border-radius: var(--radius);
+    }
+
+    .avail-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #22c55e;
+      animation: pulse 2s infinite;
+      flex-shrink: 0;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(1.3); }
+    }
+
+    .availability p {
+      font-size: 0.88rem;
+      color: #22c55e !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-deco"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="about.html" class="nav-logo">AK</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="interests.html">Interests</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section style="padding-bottom: 120px;">
+
+      <!-- Page Header -->
+      <span class="section-label">Get In Touch</span>
+      <h1 class="fade-up fade-up-1">
+        Say <span class="accent">Hello</span>
+      </h1>
+      <div class="divider"></div>
+
+      <!-- Contact Layout -->
+      <div class="contact-layout">
+
+        <!-- Left: Contact Info -->
+        <div class="contact-info fade-up fade-up-2">
+          <h2>Let's Connect</h2>
+          <p>
+            I'm always open to meeting new people, discussing ideas, or 
+            just having a good conversation. Feel free to reach out!
+          </p>
+
+          <!-- Contact Detail Items -->
+          <!-- Inline CSS used for specific item color accent -->
+          <div class="contact-detail">
+            <div class="contact-detail-icon" style="color: var(--accent);">🏫</div>
+            <div class="contact-detail-text">
+              <div class="label">School</div>
+              <div class="value">Kavya School</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon" style="color: var(--accent2);">📚</div>
+            <div class="contact-detail-text">
+              <div class="label">Grade & Section</div>
+              <div class="value">Grade 11 — Swargadwari</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon" style="color: var(--accent);">💻</div>
+            <div class="contact-detail-text">
+              <div class="label">Subject</div>
+              <div class="value">CS427 — Computer Science</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon" style="color: var(--accent2);">📅</div>
+            <div class="contact-detail-text">
+              <div class="label">Year</div>
+              <div class="value">2026</div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="#" class="social-link" title="GitHub">💻</a>
+            <a href="#" class="social-link" title="LinkedIn">🔗</a>
+            <a href="#" class="social-link" title="Email">📧</a>
+          </div>
+
+          <!-- Availability Indicator -->
+          <div class="availability">
+            <div class="avail-dot"></div>
+            <p>Available for conversations and collaborations</p>
+          </div>
+
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-wrap fade-up fade-up-3">
+          <h3>Send Me a Message</h3>
+          <p>Fill out the form below and I'll get back to you.</p>
+
+          <form id="contactForm">
+
+            <!-- Name + Email Row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="required">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="e.g. Ram Sharma"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="required">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@email.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+              <label for="phone">Phone Number <span style="color: var(--text-muted); font-weight: 400; text-transform: none; letter-spacing: 0;">(optional)</span></label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+977 98XXXXXXXX"
+              />
+            </div>
+
+            <!-- Subject -->
+            <div class="form-group">
+              <label for="subject" class="required">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Choose a topic...</option>
+                <option value="general">General Message</option>
+                <option value="academic">Academic Discussion</option>
+                <option value="project">Project Collaboration</option>
+                <option value="feedback">Feedback on Portfolio</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label for="message" class="required">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write your message here..."
+                maxlength="500"
+                required
+                oninput="document.getElementById('charCount').textContent = this.value.length + ' / 500'"
+              ></textarea>
+              <div class="char-count"><span id="charCount">0</span> / 500</div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn-submit">
+              Send Message ✉️
+            </button>
+
+          </form>
+
+          <!-- Success Message (shown via JS) -->
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✅</div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. I will get back to you soon!</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <span class="footer-name">Aditya Kunwar</span> &nbsp;·&nbsp; 
+      Grade 11 | Section Swargadwari &nbsp;·&nbsp; 
+      CS427 Computer Science &nbsp;·&nbsp; 
+      Kavya School © 2026
+    </p>
+  </footer>
+
+  <!-- JavaScript for form interaction -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Show success message
+      this.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>

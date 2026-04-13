@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interests | Aditya Kunwar</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/interests.css" />
+
+  <!-- Internal CSS -->
+  <style>
+    /* Page-specific background gradient */
+    body::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(ellipse, rgba(200,169,110,0.05) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Interests header accent line */
+    .interests-header-line {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .interests-header-line h1 {
+      flex: none;
+    }
+
+    /* Value items spacing */
+    .values-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="about.html" class="nav-logo">AK</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="interests.html" class="active">Interests</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero" style="padding-bottom: 20px;">
+      <span class="section-label">My Passions</span>
+      <h1 class="fade-up fade-up-1">Interests &amp; <span class="accent">Hobbies</span></h1>
+      <div class="divider"></div>
+      <!-- Inline CSS for width control -->
+      <p class="interests-intro fade-up fade-up-2" style="color: var(--text-muted); font-size: 1rem;">
+        Beyond academics, these are the passions that shape who I am and 
+        drive me to become a better version of myself every day.
+      </p>
+    </section>
+
+    <!-- Interests Cards Grid -->
+    <section style="padding-top: 20px; padding-bottom: 60px;">
+      <div class="grid-3 fade-up fade-up-2">
+
+        <div class="interest-card">
+          <div class="interest-card-banner banner-knowledge">
+            <span class="banner-emoji">📚</span>
+          </div>
+          <div class="interest-card-body">
+            <h3>Learning & Knowledge</h3>
+            <p>I am deeply interested in learning new things and gaining knowledge 
+               across different subjects. Studying gives me a sense of accomplishment 
+               and keeps my mind engaged.</p>
+            <span class="interest-tag">Academic</span>
+          </div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-card-banner banner-fitness">
+            <span class="banner-emoji">💪</span>
+          </div>
+          <div class="interest-card-body">
+            <h3>Fitness & Health</h3>
+            <p>I am interested in fitness and maintaining a healthy lifestyle. 
+               Staying active helps me stay energized, focused, and mentally 
+               sharp throughout the day.</p>
+            <span class="interest-tag">Health</span>
+          </div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-card-banner banner-social">
+            <span class="banner-emoji">🤝</span>
+          </div>
+          <div class="interest-card-body">
+            <h3>Meeting New People</h3>
+            <p>I enjoy interacting with new people and building good, meaningful 
+               relationships. Every person I meet teaches me something new about 
+               the world.</p>
+            <span class="interest-tag">Social</span>
+          </div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-card-banner banner-discipline">
+            <span class="banner-emoji">⚡</span>
+          </div>
+          <div class="interest-card-body">
+            <h3>Developing Discipline</h3>
+            <p>I am interested in developing discipline and becoming a better person. 
+               Building strong daily habits and routines helps me move closer to 
+               my long-term goals.</p>
+            <span class="interest-tag">Personal Growth</span>
+          </div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-card-banner banner-tech">
+            <span class="banner-emoji">💻</span>
+          </div>
+          <div class="interest-card-body">
+            <h3>Technology</h3>
+            <p>As a computer science student, I am fascinated by technology and 
+               how it shapes the world. Building websites and understanding 
+               how systems work excites me.</p>
+            <span class="interest-tag">Tech</span>
+          </div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-card-banner banner-reading">
+            <span class="banner-emoji">🌟</span>
+          </div>
+          <div class="interest-card-body">
+            <h3>Self-Improvement</h3>
+            <p>I constantly look for ways to grow as a person — mentally, 
+               socially, and academically. Reading, reflecting, and setting 
+               goals are key parts of my routine.</p>
+            <span class="interest-tag">Mindset</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Featured: Learning -->
+    <section class="featured-interest" style="padding-top: 0;">
+      <span class="section-label">Spotlight</span>
+      <h2 class="fade-up">My Biggest Passion</h2>
+      <div class="divider"></div>
+
+      <div class="featured-card fade-up">
+        <div class="featured-icon">📚</div>
+        <div>
+          <h3>A Love for Learning</h3>
+          <p>
+            Learning is not just something I do for school — it is genuinely 
+            something I love. Whether it is a new concept in computer science, 
+            a lesson about human behaviour, or a new way of approaching a problem, 
+            I find joy in expanding what I know.
+          </p>
+          <p>
+            I believe that the more I learn, the better equipped I am to handle 
+            life's challenges and contribute meaningfully to the world around me.
+          </p>
+          <a href="skills.html" class="btn btn-outline" style="margin-top: 1.5rem;">See My Skills →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="values-section" style="padding-bottom: 120px;">
+      <span class="section-label">What Drives Me</span>
+      <h2 class="fade-up">My Core Values</h2>
+      <div class="divider"></div>
+
+      <div class="values-list">
+        <div class="value-item fade-up fade-up-1">
+          <div class="value-num">01</div>
+          <div>
+            <h3>Perseverance</h3>
+            <p>I believe in pushing through challenges and never giving up on my goals, no matter how difficult things get.</p>
+          </div>
+        </div>
+
+        <div class="value-item fade-up fade-up-2">
+          <div class="value-num">02</div>
+          <div>
+            <h3>Kindness</h3>
+            <p>I try to treat everyone with respect and understanding, recognising that every person deserves compassion.</p>
+          </div>
+        </div>
+
+        <div class="value-item fade-up fade-up-3">
+          <div class="value-num">03</div>
+          <div>
+            <h3>Growth</h3>
+            <p>I am committed to continuous personal growth — always striving to be a better student, friend, and person.</p>
+          </div>
+        </div>
+
+        <div class="value-item fade-up fade-up-4">
+          <div class="value-num">04</div>
+          <div>
+            <h3>Integrity</h3>
+            <p>I believe in doing the right thing even when no one is watching, and taking responsibility for my actions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <span class="footer-name">Aditya Kunwar</span> &nbsp;·&nbsp; 
+      Grade 11 | Section Swargadwari &nbsp;·&nbsp; 
+      CS427 Computer Science &nbsp;·&nbsp; 
+      Kavya School © 2026
+    </p>
+  </footer>
+
+</body>
+</html>
